@@ -48,6 +48,7 @@ namespace VoidManager
                     CommandHandler.DiscoverCommands(assembly, BPluginName);
                     CommandHandler.DiscoverPublicCommands(assembly, BPluginName);
                     ModMessageHandler.DiscoverModMessages(assembly, CurrentBepinPlugin);
+                    DebugConsoleHandler.DiscoverCommands(assembly, BPluginName);
                     continue;
                 }
                 try
@@ -63,6 +64,7 @@ namespace VoidManager
                         CommandHandler.DiscoverPublicCommands(assembly, BPluginName);
                         ModMessageHandler.DiscoverModMessages(assembly, CurrentBepinPlugin);
                         GUIMain.Instance.DiscoverGUIMenus(assembly, voidPlugin);
+                        DebugConsoleHandler.DiscoverCommands(assembly, BPluginName);
                         ActiveVoidPlugins.Add(CurrentBepinPlugin.Metadata.GUID, voidPlugin);
                     }
                     else

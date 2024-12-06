@@ -46,6 +46,10 @@
       <HintPath>Files\com.rlabrecque.steamworks.net.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="IngameDebugConsole.Runtime">
+      <HintPath>E:\Program Files\Steam\steamapps\common\Void Crew\Void Crew_Data\Managed\IngameDebugConsole.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Files\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
